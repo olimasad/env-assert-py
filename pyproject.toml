@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "env-assert"
+version = "0.1.0"
+description = "Assert required environment variables with clear aggregated errors"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Oliver Massaad" }]
+keywords = ["env", "environment", "validation", "config"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/olimasad/env-assert-py"
+Repository = "https://github.com/olimasad/env-assert-py"
+Issues = "https://github.com/olimasad/env-assert-py/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/env_assert"]
